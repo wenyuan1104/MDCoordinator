@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button button6;
     private Button button7;
     private Button button8;
+    private Button button9;
+    private Button button10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button7.setOnClickListener(this);
         button8 = (Button) findViewById(R.id.button8);
         button8.setOnClickListener(this);
+        button9 = (Button) findViewById(R.id.button9);
+        button9.setOnClickListener(this);
+        button10 = (Button) findViewById(R.id.button10);
+        button10.setOnClickListener(this);
     }
 
     @Override
@@ -73,6 +79,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button8:
                 intent.setClass(this, PaletteActivity.class);
+                break;
+            case R.id.button9:
+                intent.setClass(this, BehaviorActivity.class);
+                break;
+            case R.id.button10:
+                intent.setClass(this, ScrollBehavirActivity.class);
                 break;
         }
         startActivity(intent);

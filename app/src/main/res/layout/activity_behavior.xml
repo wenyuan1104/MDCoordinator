@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/depentent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFFF0000"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_gravity="top|left"
+        android:text="depentent"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FF00FF00"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_gravity="top|right"
+        app:layout_behavior="com.akazam.mdcoordinator.behavior.MyBehavior"
+        android:text="auto"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/but"
+        android:layout_marginTop="200dp"
+        android:text="我是按钮"/>
+
+</android.support.design.widget.CoordinatorLayout>
