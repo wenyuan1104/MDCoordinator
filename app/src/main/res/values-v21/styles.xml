@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="DIYMaterialDialog" parent="android:Theme.Material.Light.Dialog">
+        <!-- 个性化颜色基调 -->
+        <item name="android:colorPrimary">#336600</item>
+        <item name="android:colorPrimaryDark">#339900</item>
+        <item name="android:colorAccent">#993300</item>
+        <item name="android:statusBarColor">#ccffff</item>
+        <item name="android:navigationBarColor">#330099</item>
+    </style>
+</resources>
